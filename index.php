@@ -83,7 +83,7 @@ class coinSlider extends Plugin {
 		$syntax->insert_jquery_in_head('jquery');
 		$content .= '<script language="JavaScript" src="'.URL_BASE.PLUGIN_DIR_NAME.'/coinSlider/js/coin-slider.js"></script>';
 		// html for container
-		$content .= '<div  style="width:'.$param['width'].'px;"><div id="'.str_replace(' ','_',rawurldecode($param_id)).'">'; 
+		$content .= '<div  style="width:'.$params['width'].'px;"><div id="'.str_replace(' ','_',rawurldecode($param_id)).'">'; 
 		foreach($pictures as $picture) {
 			$content .= '<a href="'.$this->GalleryClass->get_ImageSrc($param_id, $picture, false).'" target="_blank">
 							<img src="'.$this->GalleryClass->get_ImageSrc($param_id, $picture, false).'" />
