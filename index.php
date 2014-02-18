@@ -29,7 +29,7 @@ if (!defined('IS_CMS')) {
 }
 
 /**
- * PluginDraft Class
+ * coinSlider Class
  *
  * @category PHP
  * @package  PHP_MoziloPlugins
@@ -204,20 +204,76 @@ class coinSlider extends Plugin
         $config['prev'] = array(
             'type' => 'text',
             'description' => $this->_admin_lang->getLanguageValue('config_prev'),
-            'maxlength' => '100',
-            'size' => '4'
+            'maxlength' => '40',
+            'size' => '15'
         );
 
         // next button
         $config['next'] = array(
             'type' => 'text',
             'description' => $this->_admin_lang->getLanguageValue('config_next'),
-            'maxlength' => '100',
-            'size' => '4'
+            'maxlength' => '40',
+            'size' => '15'
         );
 
-        return $config;
+        // Template CSS
+        $css_admin_header = '
+            margin: -0.4em -0.8em -5px -0.8em;
+            padding: 10px;
+            background-color: #234567;
+            color: #fff;
+            text-shadow: #000 0 1px 3px;
+        ';
+        $css_admin_header_span = '
+            font-size:20px;
+            vertical-align: top;
+            padding-top: 3px;
+            display: inline-block;
+        ';
+        $css_admin_subheader = '
+            margin: -0.4em -0.8em 5px -0.8em;
+            padding: 5px 9px;
+            background-color: #ddd;
+            color: #111;
+            text-shadow: #fff 0 1px 2px;
+        ';
+        $css_admin_li = '
+            background: #eee;
+        ';
+        $css_admin_default = '
+            color: #aaa;
+            padding-left: 6px;
+        ';
 
+        // build Template
+        $config['--template~~'] = '
+            <div style="' . $css_admin_header . '">
+            <span style="' . $css_admin_header_span . '">'
+                . $this->_admin_lang->getLanguageValue(
+                     'admin_header',
+                     self::PLUGIN_TITLE
+                )
+            . '</span>
+            <a href="' . self::PLUGIN_DOCU . '" target="_blank">
+            <img style="float:right;" src="' . self::LOGO_URL . '" />
+            </a>
+            </div>
+        </li>
+        <li class="mo-in-ul-li ui-widget-content" style="' . $css_admin_li . '">
+            <div style="' . $css_admin_subheader . '">'
+            . $this->_admin_lang->getLanguageValue('admin_label') . '</div>
+            <div style="margin-bottom:5px;">
+                {prev_text}
+                {prev_description}
+                <span style="' . $css_admin_default .'"> [Prev] </span>
+            </div>
+            <div style="margin-bottom:5px;">
+                {next_text}
+                {next_description}
+                <span style="' . $css_admin_default .'"> [Next] </span>
+        ';
+
+        return $config;
     }
 
     /**
