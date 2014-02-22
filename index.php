@@ -250,8 +250,8 @@ class coinSlider extends Plugin
             <div style="' . $css_admin_header . '">
             <span style="' . $css_admin_header_span . '">'
                 . $this->_admin_lang->getLanguageValue(
-                     'admin_header',
-                     self::PLUGIN_TITLE
+                    'admin_header',
+                    self::PLUGIN_TITLE
                 )
             . '</span>
             <a href="' . self::PLUGIN_DOCU . '" target="_blank">
