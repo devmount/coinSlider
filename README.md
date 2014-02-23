@@ -17,7 +17,7 @@ Installing a plugin manually requires FTP Access.
 
 ## Syntax
 ```{coinSlider|<name>|<width>|<height>|<spw>|<sph>|<delay>|<sDelay>|<opacity>|<titleSpeed>|<effect>|<navigation>|<links>|<hoverPause>}```
-Here comes the general description of the plugin tag.
+Inserts the coinSlider.
 
 1. Parameter ```<name>```: The name of an existing gallery. A wrong name or no input leads to an error message.
 2. Parameter ```<width>```: Width of the slideshow in px (e.g. 600).
