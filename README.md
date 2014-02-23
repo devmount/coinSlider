@@ -19,19 +19,19 @@ Installing a plugin manually requires FTP Access.
 ```{coinSlider|<name>|<width>|<height>|<spw>|<sph>|<delay>|<sDelay>|<opacity>|<titleSpeed>|<effect>|<navigation>|<links>|<hoverPause>}```
 Here comes the general description of the plugin tag.
 
-1. Parameter ```<name>```: Short description of parameter 1.
-2. Parameter ```<width>```: Short description of parameter 2.
-3. Parameter ```<height>```: Short description of parameter 2.
-4. Parameter ```<spw>```: Short description of parameter 2.
-5. Parameter ```<sph>```: Short description of parameter 2.
-6. Parameter ```<delay>```: Short description of parameter 2.
-7. Parameter ```<sDelay>```: Short description of parameter 2.
-8. Parameter ```<opacity>```: Short description of parameter 2.
-9. Parameter ```<titleSpeed>```: Short description of parameter 2.
-10. Parameter ```<effect>```: Short description of parameter 2.
-11. Parameter ```<navigation>```: Short description of parameter 2.
-12. Parameter ```<links>```: Short description of parameter 2.
-13. Parameter ```<hoverPause>```: Short description of parameter 2.
+1. Parameter ```<name>```: The name of an existing gallery. A wrong name or no input leads to an error message.
+2. Parameter ```<width>```: Width of the slideshow in px (e.g. 600).
+3. Parameter ```<height>```: Height of the slideshow in px (e.g. 350).
+4. Parameter ```<spw>```: Number of squares per width.
+5. Parameter ```<sph>```: Number of squares per height.
+6. Parameter ```<delay>```: The duration of a slide to show in ms (e.g. 4000)
+7. Parameter ```<sDelay>```: The duration of a single square to show in ms (e.g. 100)
+8. Parameter ```<opacity>```: Opacity of description and navigation (a value between 0.0 and 1.0, e.g. 0.6).
+9. Parameter ```<titleSpeed>```: Duration for description to appear in ms (e.g. 500).
+10. Parameter ```<effect>```: Effect for slides change. Possible values are ```random```, ```swirl```, ```rain``` and ```straight```.
+11. Parameter ```<navigation>```: Show navigation.
+12. Parameter ```<links>```: Make slides clickable.
+13. Parameter ```<hoverPause>```: Pause on mouse hover.
 
 ## License
 This Plugin is distributed under *GNU General Public License, Version 3* (see LICENSE).
