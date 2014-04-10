@@ -46,7 +46,7 @@ class coinSlider extends Plugin
     // plugin information
     const PLUGIN_AUTHOR  = 'HPdesigner';
     const PLUGIN_DOCU
-        = 'http://devmount.de/Develop/Mozilo%20Plugins/coinSlider.html';
+        = 'http://devmount.de/Develop/moziloCMS/Plugins/coinSlider.html';
     const PLUGIN_TITLE   = 'coinSlider';
     const PLUGIN_VERSION = 'v1.0.2013-09-19';
     const MOZILO_VERSION = '2.0';
