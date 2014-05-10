@@ -10,10 +10,10 @@
  * @category PHP
  * @package  PHP_MoziloPlugins
  * @author   HPdesigner <kontakt@devmount.de>
- * @license  GPL v3
+ * @license  GPL v3+
  * @version  GIT: v1.0.2013-09-19
  * @link     https://github.com/devmount/coinSlider
- * @link     http://devmount.de/Develop/Mozilo%20Plugins/coinSlider.html
+ * @link     http://devmount.de/Develop/moziloCMS/Plugins/coinSlider.html
  * @see      The fear of the LORD is the beginning of knowledge:
  *           but fools despise wisdom and instruction.
  *            - The Bible
@@ -34,7 +34,7 @@ if (!defined('IS_CMS')) {
  * @category PHP
  * @package  PHP_MoziloPlugins
  * @author   HPdesigner <kontakt@devmount.de>
- * @license  GPL v3
+ * @license  GPL v3+
  * @link     https://github.com/devmount/coinSlider
  */
 class coinSlider extends Plugin
