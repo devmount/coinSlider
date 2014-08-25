@@ -1,7 +1,8 @@
-tag_full    = Gibt den coinSlider zurück (vollständige Parameter-Auflistung)
-tag_min     = Gibt den coinSlider zurück
-description = Generiert eine Slideshow aus Bildern einer mozilo-Galerie. <br /><br /><span style='font-weight:bold'>Nutzung:</span><br /><span style='font-family:monospace;margin:3px 3px; background-color:#eee;border:1px dotted #aaa;'>{PARAM1}</span> Fügt die Slideshow der moziloCMS Galerie "name" ein und konfiguriert nach gegebenen Parametern.<br /><br /><span style='font-weight:bold'>Dokumentation:</span><br />Eine ausführliche Dokumentation ist auf <span style="font-style:italic">www.devmount.de</span> zu finden (siehe obenstehender Link).
-config_prev = Vorheriges Bild
-config_next = Nächstes Bild
+tag_full     = Gibt den coinSlider zurück (vollständige Parameter-Auflistung)
+tag_min      = Gibt den coinSlider zurück
+description  = Generiert eine Slideshow aus Bildern einer mozilo-Galerie. <br /><br /><span style='font-weight:bold'>Nutzung:</span><br /><span style='font-family:monospace;margin:3px 3px; background-color:#eee;border:1px dotted #aaa;'>{PARAM1}</span> Fügt die Slideshow der moziloCMS Galerie "name" ein und konfiguriert nach gegebenen Parametern.<br /><br /><span style='font-weight:bold'>Dokumentation:</span><br />Eine ausführliche Dokumentation ist auf <span style="font-style:italic">www.devmount.de</span> zu finden (siehe obenstehender Link).
+on_devmount  = auf devmount.de
+config_prev  = Vorheriges Bild
+config_next  = Nächstes Bild
 admin_header = {PARAM1} Plugin Konfiguration
-admin_label = Button Label
+admin_label  = Button Label

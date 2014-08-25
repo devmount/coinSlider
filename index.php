@@ -9,7 +9,7 @@
  *
  * @category PHP
  * @package  PHP_MoziloPlugins
- * @author   HPdesigner <kontakt@devmount.de>
+ * @author   DEVMOUNT <mail@devmount.de>
  * @license  GPL v3+
  * @version  GIT: v1.0.2013-09-19
  * @link     https://github.com/devmount/coinSlider
@@ -33,7 +33,7 @@ if (!defined('IS_CMS')) {
  *
  * @category PHP
  * @package  PHP_MoziloPlugins
- * @author   HPdesigner <kontakt@devmount.de>
+ * @author   DEVMOUNT <mail@devmount.de>
  * @license  GPL v3+
  * @link     https://github.com/devmount/coinSlider
  */
@@ -44,12 +44,13 @@ class coinSlider extends Plugin
     var $GalleryClass;
 
     // plugin information
-    const PLUGIN_AUTHOR  = 'HPdesigner';
-    const PLUGIN_DOCU
-        = 'http://devmount.de/Develop/moziloCMS/Plugins/coinSlider.html';
+    const PLUGIN_AUTHOR  = 'DEVMOUNT';
     const PLUGIN_TITLE   = 'coinSlider';
     const PLUGIN_VERSION = 'v1.0.2013-09-19';
     const MOZILO_VERSION = '2.0';
+    const PLUGIN_DOCU
+        = 'http://devmount.de/Develop/moziloCMS/Plugins/coinSlider.html';
+
     private $_plugin_tags = array(
         'full' => '{coinSlider|name|width|height|spw|sph|delay|sDelay|opacity|titleSpeed|effect|navigation|links|hoverPause}',
         'min'  => '{coinSlider|name|width|height||||||||||}',
@@ -305,7 +306,11 @@ class coinSlider extends Plugin
                 htmlspecialchars($this->_plugin_tags['full'])
             ),
             self::PLUGIN_AUTHOR,
-            self::PLUGIN_DOCU,
+            array(
+                self::PLUGIN_DOCU,
+                self::PLUGIN_TITLE . ' '
+                . $this->_admin_lang->getLanguageValue('on_devmount')
+            ),
             $tags
         );
 
