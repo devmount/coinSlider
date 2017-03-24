@@ -16,7 +16,9 @@ Installing a plugin manually requires FTP Access.
 - Go to the backend tab *Plugins* and activate the now listed new coinSlider plugin
 
 ## Syntax
-```{coinSlider|<name>|<width>|<height>|<spw>|<sph>|<delay>|<sDelay>|<opacity>|<titleSpeed>|<effect>|<navigation>|<links>|<hoverPause>}```
+```
+{coinSlider|<name>|<width>|<height>|<spw>|<sph>|<delay>|<sDelay>|<opacity>|<titleSpeed>|<effect>|<navigation>|<links>|<hoverPause>}
+```
 Inserts the coinSlider.
 
 1. Parameter ```<name>```: The name of an existing gallery. A wrong name or no input leads to an error message.
@@ -38,4 +40,4 @@ This Plugin is distributed under *GNU General Public License, Version 3* (see LI
 
 ## Documentation
 A detailed documentation and demo can be found on DEVMOUNT's website:
-http://devmount.de/Develop/moziloCMS/Plugins/coinSlider.html
+http://t.devmount.de/Develop/moziloCMS/Plugins/coinSlider.html
